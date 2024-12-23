@@ -1,0 +1,105 @@
+.Balance {
+    margin-top: 71px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.top_half, .buttom_half {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+}
+
+.top_half h1, .buttom_half h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.top_half p, .buttom_half p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d1d1d1;
+    max-width: 800px;
+}
+
+.touch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #5FA4E6 45%, #665DCD 60%, #D2AB67 100%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.touch:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #665DCD 40%, #5FA4E6 60%, #D2AB67 100%);
+}
+
+.buttom_half img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.buttom_half img:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .Balance {
+        gap: 50px;
+    }
+
+    .top_half h1, .buttom_half h1 {
+        font-size: 32px;
+    }
+
+    .top_half p, .buttom_half p {
+        font-size: 16px;
+    }
+
+    .touch {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top_half h1, .buttom_half h1 {
+        font-size: 28px;
+    }
+
+    .top_half p, .buttom_half p {
+        font-size: 14px;
+    }
+
+    .touch {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}

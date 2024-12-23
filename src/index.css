@@ -1,0 +1,6 @@
+.body , html {
+    background: #141619;
+    color: whitesmoke;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}

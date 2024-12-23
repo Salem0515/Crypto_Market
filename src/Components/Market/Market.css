@@ -1,0 +1,148 @@
+.Market {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 40px 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: #ffffff;
+    max-width: 1200px; /* Restrict max width for better centering */
+    text-align: justify; /* Justifies all text inside the container */
+}
+
+.Blob {
+    position: absolute;
+    z-index: -200;
+    margin-left: -1400px;
+    margin-top: -850px;
+}
+
+.Market h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.Market h1:hover {
+    color: #ff9800; /* Orange on hover */
+}
+
+.Market p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #d1d1d1;
+    max-width: 800px;
+    line-height: 1.8; /* Enhance readability */
+}
+
+.first_SEC, .second_SEC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%; /* Ensure it spans the container */
+}
+
+.first_SEC img, .second_SEC img {
+    max-width: 45%; /* Ensure proper alignment with text */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.first_SEC img:hover, .second_SEC img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.text, .text_1 {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text h2, .text_1 h2 {
+    font-size: 28px;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.text h2:hover, .text_1 h2:hover {
+    color: #ff9800;
+    transform: translateY(-5px);
+}
+
+.text h6, .text_1 h6 {
+    font-size: 16px;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+
+.text p, .text_1 p {
+    font-size: 16px;
+    color: #d1d1d1;
+    line-height: 1.6;
+}
+
+.text span, .text_1 span {
+    font-size: 16px;
+    color: #007BFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.text span:hover, .text_1 span:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .first_SEC, .second_SEC {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text, .text_1 {
+        max-width: 100%;
+    }
+
+    .text img, .text_1 img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Market h1 {
+        font-size: 28px;
+    }
+
+    .Market p {
+        font-size: 16px;
+    }
+
+    .text h2, .text_1 h2 {
+        font-size: 22px;
+    }
+
+    .text h6, .text_1 h6 {
+        font-size: 14px;
+    }
+
+    .text p, .text_1 p {
+        font-size: 14px;
+    }
+}
