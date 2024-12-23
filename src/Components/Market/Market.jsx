@@ -1,6 +1,6 @@
 import React from 'react'
 import './Market.css'
-import blob from '../../Assets/Blob.png'
+import blob from '../../Assets/blob.png'
 import infinty from '../../Assets/infinty.png'
 import chart from '../../Assets/chart.png'
 const Market = () => {
