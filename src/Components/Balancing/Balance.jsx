@@ -1,6 +1,6 @@
 import React from 'react'
 import './Balance.css'
-import table from '../../Assets/Table.png'
+import table from '../../Assets/table.png'
 const Balance = () => {
   return (
     <div className='Balance'>
